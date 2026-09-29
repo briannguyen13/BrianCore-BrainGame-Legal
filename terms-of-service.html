@@ -1,38 +1,168 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Điều khoản sử dụng - BrianCore Brain Game</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Terms of Service — BrianCore Brain Game Portal</title>
+    <meta name="description" content="Điều khoản sử dụng của BrianCore Brain Game Portal, bao gồm các quy định về dịch vụ, nội dung và quảng cáo AdMob.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        portal: {
+                            bg: '#050B08',
+                            card: '#0D1A12',
+                            cardBorder: '#1A3824',
+                            neonGreen: '#00FF66',
+                            emeraldGlow: '#10B981',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['Courier New', monospace]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .portal-bg {
+            background: linear-gradient(135deg, rgba(5, 11, 8, 0.95) 0%, rgba(10, 26, 18, 0.98) 100%);
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">🎮 BrianCore Brain Game</a>
-            <nav>
-                <a href="index.html">Trang chủ</a>
-                <a href="privacy-policy.html">Chính sách bảo mật</a>
-                <a href="terms-of-service.html" class="active">Điều khoản</a>
-            </nav>
+<body class="portal-bg text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-black min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#050B08]/90 backdrop-blur-md border-b border-emerald-950/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-xl bg-emerald-950 border border-emerald-500/50 flex items-center justify-center text-emerald-400 font-bold shadow-lg shadow-emerald-900/40 group-hover:scale-105 transition-transform overflow-hidden p-1">
+                    <img src="assets/Orange_icon.png" alt="Portal Icon" class="w-full h-full object-contain rounded-lg" onerror="this.src='https://via.placeholder.com/44?text=BG'">
+                </div>
+                <div>
+                    <span class="text-lg font-extrabold tracking-wider text-white block leading-none">BRAIN GAME</span>
+                    <span class="text-xs font-mono text-emerald-400 tracking-widest block mt-1">PORTAL HUB</span>
+                </div>
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="px-4 py-2 rounded-xl bg-emerald-950 hover:bg-emerald-900 text-emerald-400 text-sm font-semibold border border-emerald-500/40 transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-arrow-left text-xs"></i>
+                    <span>Trang chủ Portal</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main>
-        <div class="content-box">
-            <h2>Điều khoản sử dụng (Terms of Service)</h2>
-            <p>Khi tải xuống và sử dụng BrianCore Brain Game, bạn đồng ý tuân thủ các điều khoản sau đây:</p>
-            <ul>
-                <li><strong>Quyền sở hữu trí tuệ:</strong> Toàn bộ mã nguồn, giao diện, đồ họa và âm thanh trong ứng dụng thuộc sở hữu độc quyền của BrianCore.</li>
-                <li><strong>Hành vi bị cấm:</strong> Nghiêm cấm mọi hành vi sao chép, can thiệp vào mã nguồn, dịch ngược ứng dụng hoặc cố tình can thiệp vào hệ thống quảng cáo trái phép.</li>
-                <li><strong>Giới hạn trách nhiệm:</strong> Chúng tôi cung cấp ứng dụng trên cơ sở "nguyên trạng" và không chịu trách nhiệm cho bất kỳ tổn thất dữ liệu cục bộ nào trên thiết bị của người dùng.</li>
-            </ul>
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto bg-[#0D1A12]/90 border border-emerald-950 rounded-3xl p-8 sm:p-12 shadow-2xl backdrop-blur-xl relative overflow-hidden space-y-10">
+            <!-- Glow Effect Background -->
+            <div class="absolute -right-20 -top-20 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="space-y-4 border-b border-emerald-950 pb-6">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-950 border border-emerald-500/40 text-xs font-mono text-emerald-400">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <span>LEGAL & TERMS</span>
+                </div>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+                    Terms of Service <br/>
+                    <span class="text-lg sm:text-2xl font-semibold text-emerald-400 neon-glow">Điều khoản sử dụng (Brain Game Portal)</span>
+                </h1>
+                <p class="text-xs text-slate-400 font-mono">Last updated: September 2026</p>
+            </div>
+
+            <!-- English Section -->
+            <section class="space-y-6">
+                <div class="flex items-center space-x-3 border-b border-emerald-950 pb-3">
+                    <span class="px-3 py-1 rounded-lg bg-emerald-950 text-emerald-400 font-mono font-bold text-xs">ENGLISH</span>
+                    <h2 class="text-xl font-bold text-white m-0">Terms of Service</h2>
+                </div>
+
+                <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">1. Acceptance of Terms</h3>
+                        <p>By downloading, installing, or interacting with <strong>BrianCore Brain Game Portal</strong>, you agree to be bound by these Terms of Service. If you do not agree to these conditions, please refrain from using the application.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">2. Use License & AdMob Integration</h3>
+                        <p>The application is provided as a solo-developer product supported by optional or banner/interstitial advertisements via Google AdMob. You are granted a limited, non-exclusive license to use the app for personal, non-commercial entertainment and brain training.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">3. In-App Purchases & Digital Content</h3>
+                        <p>Any digital goods, premium features, or ad-free upgrades are managed securely through Google Play Billing. All transactions are final and subject to Google Play's standard refund and billing terms.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">4. Limitation of Liability</h3>
+                        <p>The portal app is provided "as is" without warranty of any kind. The developer shall not be held liable for any device issues, data loss of local high scores, or interruptions caused by third-party ad networks.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="my-10 border-t border-emerald-950"></div>
+
+            <!-- Vietnamese Section -->
+            <section class="space-y-6">
+                <div class="flex items-center space-x-3 border-b border-emerald-950 pb-3">
+                    <span class="px-3 py-1 rounded-lg bg-amber-500/20 text-amber-400 font-mono font-bold text-xs">TIẾNG VIỆT</span>
+                    <h2 class="text-xl font-bold text-white m-0">Điều khoản sử dụng</h2>
+                </div>
+
+                <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">1. Chấp thuận điều khoản</h3>
+                        <p>Bằng cách tải xuống, cài đặt hoặc sử dụng <strong>BrianCore Brain Game Portal</strong>, bạn đồng ý tuân theo các Điều khoản Sử dụng này. Nếu không đồng ý, vui lòng ngừng sử dụng ứng dụng.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">2. Giấy phép sử dụng & Tích hợp quảng cáo</h3>
+                        <p>Ứng dụng được cung cấp dưới dạng sản phẩm độc lập, được duy trì một phần thông qua việc hiển thị quảng cáo từ mạng lưới <strong>Google AdMob</strong>. Bạn được cấp quyền hạn chế, không độc quyền để sử dụng ứng dụng cho mục đích giải trí và luyện tập cá nhân.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">3. Mua hàng trong ứng dụng</h3>
+                        <p>Mọi giao dịch nâng cấp, tính năng cao cấp hoặc gỡ quảng cáo được xử lý bảo mật qua hệ thống Google Play Billing. Các giao dịch tuân thủ theo chính sách và điều kiện của Google Play.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-[#050B08]/60 border border-emerald-950/80 space-y-2">
+                        <h3 class="text-base font-semibold text-white">4. Giới hạn trách nhiệm</h3>
+                        <p>Ứng dụng được cung cấp theo trạng thái nguyên trạng ("as is"). Nhà phát triển không chịu trách nhiệm pháp lý đối với các sự cố phần cứng thiết bị, việc mất dữ liệu điểm số lưu cục bộ hoặc gián đoạn từ dịch vụ quảng cáo bên thứ ba.</p>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 BrianCore. Bảo lưu mọi quyền.</p>
+    <!-- Footer Section -->
+    <footer class="bg-black border-t border-emerald-950 py-8 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <img src="assets/Orange_icon.png" alt="Portal Icon" class="w-8 h-8 rounded-lg object-contain shadow-md" onerror="this.src='https://via.placeholder.com/32?text=BG'">
+                <span class="text-slate-200 font-semibold">BrianCore Portal</span>
+                <span class="text-slate-700">|</span>
+                <span class="text-xs font-mono text-slate-500">© 2026 All rights reserved.</span>
+            </div>
+            <div class="flex items-center space-x-6 text-xs sm:text-sm font-medium">
+                <a href="index.html" class="hover:text-emerald-400 transition-colors">Trang chủ Portal</a>
+                <span class="text-slate-700">•</span>
+                <a href="privacy-policy.html" class="hover:text-emerald-400 transition-colors">Chính sách bảo mật</a>
+            </div>
+        </div>
     </footer>
-    <script src="js/main.js"></script>
+
 </body>
 </html>

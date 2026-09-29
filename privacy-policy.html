@@ -1,46 +1,189 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chính sách bảo mật - BrianCore Brain Game</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Privacy Policy — BrianCore Brain Game Portal</title>
+    <meta name="description" content="Chính sách bảo mật và quyền riêng tư của BrianCore Brain Game Portal, bao gồm thông tin về AdMob và dịch vụ quảng cáo.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        portal: {
+                            bg: '#050B08',
+                            card: '#0D1A12',
+                            cardBorder: '#1A3824',
+                            neonGreen: '#00FF66',
+                            emeraldGlow: '#10B981',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['Courier New', monospace]
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .portal-bg {
+            background: linear-gradient(135deg, rgba(5, 11, 8, 0.95) 0%, rgba(10, 26, 18, 0.98) 100%);
+        }
+        .neon-glow {
+            text-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div class="nav-container">
-            <a href="index.html" class="logo">🎮 BrianCore Brain Game</a>
-            <nav>
-                <a href="index.html">Trang chủ</a>
-                <a href="privacy-policy.html" class="active">Chính sách bảo mật</a>
-                <a href="terms-of-service.html">Điều khoản</a>
-            </nav>
+<body class="portal-bg text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-black min-h-screen flex flex-col justify-between">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#050B08]/90 backdrop-blur-md border-b border-emerald-950/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-xl bg-emerald-950 border border-emerald-500/50 flex items-center justify-center text-emerald-400 font-bold shadow-lg shadow-emerald-900/40 group-hover:scale-105 transition-transform overflow-hidden p-1">
+                    <img src="assets/Orange_icon.png" alt="Portal Icon" class="w-full h-full object-contain rounded-lg" onerror="this.src='https://via.placeholder.com/44?text=BG'">
+                </div>
+                <div>
+                    <span class="text-lg font-extrabold tracking-wider text-white block leading-none">BRAIN GAME</span>
+                    <span class="text-xs font-mono text-emerald-400 tracking-widest block mt-1">PORTAL HUB</span>
+                </div>
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="px-4 py-2 rounded-xl bg-emerald-950 hover:bg-emerald-900 text-emerald-400 text-sm font-semibold border border-emerald-500/40 transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-arrow-left text-xs"></i>
+                    <span>Trang chủ Portal</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main>
-        <div class="content-box">
-            <h2>Chính sách bảo mật (Privacy Policy)</h2>
-            <p><em>Cập nhật lần cuối: Tháng 9, 2026</em></p>
-            <p>Chào mừng bạn đến với ứng dụng <strong>BrianCore Brain Game</strong> do <strong>BrianCore</strong> phát triển. Chúng tôi cam kết bảo vệ quyền riêng tư của người dùng.</p>
-            
-            <h3>1. Thu thập dữ liệu</h3>
-            <p>Ứng dụng không yêu cầu tạo tài khoản cá nhân. Tuy nhiên, chúng tôi sử dụng dịch vụ quảng cáo của bên thứ ba (Google AdMob) để hiển thị banner và quảng cáo phần thưởng. Google AdMob có thể tự động thu thập mã định danh thiết bị (Advertising ID) và địa chỉ IP nhằm cung cấp quảng cáo phù hợp.</p>
+    <!-- Main Content -->
+    <main class="flex-grow pt-32 pb-20 px-6">
+        <div class="max-w-4xl mx-auto bg-[#0D1A12]/90 border border-emerald-950 rounded-3xl p-8 sm:p-12 shadow-2xl backdrop-blur-xl relative overflow-hidden">
+            <!-- Glow Effect Background -->
+            <div class="absolute -right-20 -top-20 w-60 h-60 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
-            <h3>2. Quảng cáo của bên thứ ba</h3>
-            <p>Quảng cáo trong game được quản lý bởi Google AdMob. Bạn có thể tìm hiểu chi tiết về cách Google thu thập và xử lý dữ liệu tại <a class="link" href="https://policies.google.com/technologies/ads" target="_blank">Chính sách quảng cáo của Google</a>.</p>
+            <!-- Page Title Header -->
+            <div class="space-y-4 mb-10 border-b border-emerald-950 pb-6">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-emerald-950 border border-emerald-500/40 text-xs font-mono text-emerald-400">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>LEGAL & PRIVACY POLICY</span>
+                </div>
+                <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+                    Privacy Policy <br/>
+                    <span class="text-lg sm:text-2xl font-semibold text-emerald-400 neon-glow">Chính sách bảo mật (Brian Game Portal)</span>
+                </h1>
+            </div>
 
-            <h3>3. Bảo mật trẻ em</h3>
-            <p>Ứng dụng không chủ ý thu thập thông tin từ trẻ em dưới độ tuổi quy định mà không có sự đồng ý của phụ huynh hoặc người giám hộ hợp pháp.</p>
+            <div class="space-y-12 text-slate-300 text-base leading-relaxed">
+                
+                <!-- English Section -->
+                <section class="space-y-6">
+                    <div class="flex items-center space-x-3 border-b border-emerald-950 pb-3">
+                        <span class="px-3 py-1 rounded-lg bg-emerald-950 text-emerald-400 font-mono font-bold text-xs">ENGLISH</span>
+                        <h2 class="text-xl font-bold text-white m-0">Privacy & Advertising Policy</h2>
+                    </div>
+                    
+                    <p class="text-slate-400 text-sm font-mono"><strong>Last updated:</strong> September 2026</p>
+                    
+                    <p>At <strong>BrianCore</strong>, we respect your privacy and are committed to protecting the data you entrust to us while using our <strong>Brain Game Portal</strong> applications. This Privacy Policy outlines how we collect, use, and safeguard your information.</p>
+                    
+                    <h3 class="text-lg font-semibold text-white pt-2">1. Information Collection & Usage</h3>
+                    <p>Our portal hub is designed with user privacy in mind. We minimize direct personal data collection:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-slate-300">
+                        <li><strong>Local Game Data:</strong> High scores, game progress, and playtime statistics are stored locally on your device.</li>
+                        <li><strong>Device Permissions:</strong> Device permissions are requested only when necessary to support core gameplay features or analytical improvements.</li>
+                        <li><strong>Account Creation:</strong> The application does not require you to register an account or provide sensitive personal profile credentials.</li>
+                    </ul>
 
-            <h3>4. Liên hệ</h3>
-            <p>Mọi thắc mắc vui lòng liên hệ: <strong>briannguyen13@gmail.com</strong></p>
+                    <h3 class="text-lg font-semibold text-white pt-2">2. Google AdMob & Advertising</h3>
+                    <p>Our application uses Google AdMob to display advertisements. Google AdMob uses advertising identifiers, cookies, and similar technologies to collect information to serve personalized or non-personalized ads based on your interactions.</p>
+                    <ul class="list-disc pl-6 space-y-2 text-slate-300">
+                        <li><strong>Ad Providers:</strong> Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to your app or other websites.</li>
+                        <li><strong>Data Collected by Ad Partners:</strong> Information such as device identifiers, IP addresses, and interaction metrics may be collected by Google to manage ad delivery, frequency capping, and ad fraud detection.</li>
+                        <li><strong>User Choices:</strong> You can manage personalized advertising settings through your Google account settings or device advertising ID controls.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-white pt-2">3. In-App Purchases & Licensing</h3>
+                    <p>For enhanced features or ad-free experiences managed via Google Play Billing, BrianCore does not receive, process, or store financial account details, credit card numbers, or sensitive payment credentials.</p>
+                    
+                    <h3 class="text-lg font-semibold text-white pt-2">4. Data Security</h3>
+                    <p>We implement industry-standard technical and administrative safeguards to protect any data processed through our application ecosystem.</p>
+                    
+                    <h3 class="text-lg font-semibold text-white pt-2">5. Contact Us</h3>
+                    <p>If you have any questions or concerns regarding our Privacy Policy or ad practices, please contact us at: <br>
+                       <a href="mailto:briancore.support@gmail.com" class="text-emerald-400 hover:underline font-semibold mt-1 inline-block font-mono"><i class="fa-solid fa-envelope mr-2"></i>briancore.support@gmail.com</a>
+                    </p>
+                </section>
+
+                <div class="my-10 border-t border-emerald-950"></div>
+
+                <!-- Vietnamese Section -->
+                <section class="space-y-6">
+                    <div class="flex items-center space-x-3 border-b border-emerald-950 pb-3">
+                        <span class="px-3 py-1 rounded-lg bg-amber-500/20 text-amber-400 font-mono font-bold text-xs">TIẾNG VIỆT</span>
+                        <h2 class="text-xl font-bold text-white m-0">Chính sách bảo mật & Quảng cáo</h2>
+                    </div>
+
+                    <p class="text-slate-400 text-sm font-mono"><strong>Cập nhật lần cuối:</strong> Tháng 9 năm 2026</p>
+                    
+                    <p>Tại <strong>BrianCore</strong>, chúng tôi tôn trọng quyền riêng tư của bạn và cam kết bảo vệ thông tin khi bạn sử dụng hệ sinh thái <strong>Brain Game Portal</strong>. Chính sách này mô tả cách chúng tôi và các đối tác thu thập và sử dụng dữ liệu.</p>
+                    
+                    <h3 class="text-lg font-semibold text-white pt-2">1. Thu thập và sử dụng thông tin</h3>
+                    <p>Ứng dụng game portal của chúng tôi được thiết kế tối ưu hóa quyền riêng tư:</p>
+                    <ul class="list-disc pl-6 space-y-2 text-slate-300">
+                        <li><strong>Dữ liệu trò chơi cục bộ:</strong> Điểm số cao (High Score), lịch sử chơi và thời gian chơi được lưu trữ trực tiếp trên thiết bị của bạn.</li>
+                        <li><strong>Quyền thiết bị:</strong> Các quyền truy cập chỉ được yêu cầu khi cần thiết để phục vụ vận hành trò chơi.</li>
+                        <li><strong>Đăng ký tài khoản:</strong> Ứng dụng không yêu cầu người dùng phải tạo tài khoản cá nhân hay cung cấp thông tin nhạy cảm.</li>
+                    </ul>
+                    
+                    <h3 class="text-lg font-semibold text-white pt-2">2. Quảng cáo Google AdMob</h3>
+                    <p>Ứng dụng của chúng tôi tích hợp dịch vụ quảng cáo <strong>Google AdMob</strong> để hiển thị quảng cáo. Google AdMob có thể sử dụng mã định danh quảng cáo trên thiết bị, cookie và các công nghệ tương tự để thu thập thông tin nhằm phục vụ việc hiển thị quảng cáo phù hợp.</p>
+                    <ul class="list-disc pl-6 space-y-2 text-slate-300">
+                        <li><strong>Nhà cung cấp quảng cáo:</strong> Google và các bên thứ ba sử dụng cookie để phân phối quảng cáo dựa trên các lượt truy cập trước đây của người dùng vào ứng dụng hoặc các trang web khác.</li>
+                        <li><strong>Dữ liệu thu thập bởi đối tác quảng cáo:</strong> Các thông tin như mã định danh thiết bị, địa chỉ IP và số liệu tương tác quảng cáo có thể được Google thu thập để quản lý việc hiển thị quảng cáo và chống gian lận.</li>
+                        <li><strong>Tùy chọn của người dùng:</strong> Bạn có thể quản lý cài đặt quảng cáo cá nhân hóa trong phần cài đặt tài khoản Google hoặc cài đặt mã định danh trên thiết bị của mình.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold text-white pt-2">3. Mua hàng trong ứng dụng</h3>
+                    <p>Đối với các giao dịch mua sắm hoặc nâng cấp qua Google Play Billing, BrianCore tuyệt đối không lưu trữ hay xử lý thông tin tài chính hoặc số thẻ thanh toán của bạn.</p>
+                    
+                    <h3 class="text-lg font-semibold text-white pt-2">4. Bảo mật dữ liệu</h3>
+                    <p>Chúng tôi áp dụng các tiêu chuẩn bảo mật kỹ thuật hợp lý để bảo vệ toàn bộ hệ thống ứng dụng.</p>
+                    
+                    <h3 class="text-lg font-semibold text-white pt-2">5. Liên hệ</h3>
+                    <p>Nếu bạn có bất kỳ thắc mắc nào về chính sách bảo mật hoặc các vấn đề liên quan đến quảng cáo, vui lòng liên hệ với chúng tôi qua: <br>
+                       <a href="mailto:briancore.support@gmail.com" class="text-emerald-400 hover:underline font-semibold mt-1 inline-block font-mono"><i class="fa-solid fa-envelope mr-2"></i>briancore.support@gmail.com</a>
+                    </p>
+                </section>
+
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 BrianCore. Bảo lưu mọi quyền.</p>
+    <!-- Footer Section -->
+    <footer class="bg-black border-t border-emerald-950 py-8 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-3">
+                <img src="assets/Orange_icon.png" alt="Portal Icon" class="w-8 h-8 rounded-lg object-contain shadow-md" onerror="this.src='https://via.placeholder.com/32?text=BG'">
+                <span class="text-slate-200 font-semibold">BrianCore Portal</span>
+                <span class="text-slate-700">|</span>
+                <span class="text-xs font-mono text-slate-500">© 2026 All rights reserved.</span>
+            </div>
+            <div class="flex items-center space-x-6 text-xs sm:text-sm font-medium">
+                <a href="index.html" class="hover:text-emerald-400 transition-colors">Trang chủ Portal</a>
+                <span class="text-slate-700">•</span>
+                <a href="terms-of-service.html" class="hover:text-emerald-400 transition-colors">Điều khoản sử dụng</a>
+            </div>
+        </div>
     </footer>
-    <script src="js/main.js"></script>
+
 </body>
 </html>
