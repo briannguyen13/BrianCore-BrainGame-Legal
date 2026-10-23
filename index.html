@@ -74,7 +74,6 @@
                 <a href="terms-of-service.html" class="hover:text-emerald-400 transition-colors" data-lang-en="Terms" data-lang-vi="Điều khoản">Điều khoản</a>
             </nav>
             <div class="flex items-center space-x-4">
-                <!-- Nút chuyển ngôn ngữ EN / VI -->
                 <button onclick="toggleLanguage()" class="px-3 py-1.5 rounded-lg bg-emerald-950 border border-emerald-500/40 text-emerald-400 text-xs font-orbitron font-bold hover:bg-emerald-500 hover:text-black transition-all shadow-sm">
                     <span id="langLabel">VI / EN</span>
                 </button>
@@ -158,26 +157,26 @@
                 </div>
             </div>
 
-            <!-- Game Hub Grid Display (4 Nhóm Game Chính) -->
+            <!-- Game Hub Grid Display -->
             <div id="hub" class="text-center mb-12">
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white" data-lang-en="Puzzle Game Collection" data-lang-vi="Bộ Sưu Tập Trò Chơi Trí Tuệ">Bộ Sưu Tập Trò Chơi Trí Tuệ</h2>
                 <p class="text-slate-400 text-sm mt-2" data-lang-en="4 main game categories with diverse modes — 100% Free." data-lang-vi="4 nhóm tựa game chính với các chế độ phong phú — Không giới hạn, hoàn toàn miễn phí.">4 nhóm tựa game chính với các chế độ phong phú — Không giới hạn, hoàn toàn miễn phí.</p>
             </div>
 
-            <!-- Grid 4 Card Game Chính -->
+            <!-- Grid 4 Card Game Chính - Đã kéo dài h-[550px] sm:h-[620px] giúp hiển thị 100% trọn vẹn màn hình game mà không bị cắt trên/dưới -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 
                 <!-- 1. Tetris -->
                 <div class="group relative rounded-3xl overflow-hidden border border-emerald-500/30 bg-[#0D1A12]/90 hover:border-emerald-400 transition-all duration-500 shadow-2xl flex flex-col justify-between">
                     <div>
-                        <div class="grid grid-cols-2 gap-2 p-3 bg-black border-b border-emerald-950">
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/tetris_classic_01.png" alt="Tetris Classic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">Classic</span>
+                        <div class="grid grid-cols-2 gap-2 p-3 bg-[#050B08] border-b border-emerald-950 h-[550px] sm:h-[620px]">
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/tetris_classic_01.png" alt="Tetris Classic" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">Classic</span>
                             </div>
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/tetris_puzzle_01.png" alt="Tetris Puzzle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">Puzzle</span>
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/tetris_puzzle_01.png" alt="Tetris Puzzle" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">Puzzle</span>
                             </div>
                         </div>
                         <div class="p-6">
@@ -202,14 +201,14 @@
                 <!-- 2. Sudoku -->
                 <div class="group relative rounded-3xl overflow-hidden border border-emerald-500/30 bg-[#0D1A12]/90 hover:border-emerald-400 transition-all duration-500 shadow-2xl flex flex-col justify-between">
                     <div>
-                        <div class="grid grid-cols-2 gap-2 p-3 bg-black border-b border-emerald-950">
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/sudoku_02.png" alt="Sudoku Classic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">Classic 9x9</span>
+                        <div class="grid grid-cols-2 gap-2 p-3 bg-[#050B08] border-b border-emerald-950 h-[550px] sm:h-[620px]">
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/sudoku_02.png" alt="Sudoku Classic" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">Classic 9x9</span>
                             </div>
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/zodiacgoku_02.png" alt="ZodiacDoku" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">ZodiacDoku</span>
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/zodiacgoku_02.png" alt="ZodiacDoku" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">ZodiacDoku</span>
                             </div>
                         </div>
                         <div class="p-6">
@@ -234,14 +233,14 @@
                 <!-- 3. Memory Matching -->
                 <div class="group relative rounded-3xl overflow-hidden border border-emerald-500/30 bg-[#0D1A12]/90 hover:border-emerald-400 transition-all duration-500 shadow-2xl flex flex-col justify-between">
                     <div>
-                        <div class="grid grid-cols-2 gap-2 p-3 bg-black border-b border-emerald-950">
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/memory_fruits_01.png" alt="Memory Fruits" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">Fruits</span>
+                        <div class="grid grid-cols-2 gap-2 p-3 bg-[#050B08] border-b border-emerald-950 h-[550px] sm:h-[620px]">
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/memory_fruits_01.png" alt="Memory Fruits" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">Fruits</span>
                             </div>
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/memory_flags_01.png" alt="Memory Flags" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">Flags</span>
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/memory_flags_01.png" alt="Memory Flags" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">Flags</span>
                             </div>
                         </div>
                         <div class="p-6">
@@ -266,14 +265,14 @@
                 <!-- 4. Bubble Shooter -->
                 <div class="group relative rounded-3xl overflow-hidden border border-emerald-500/30 bg-[#0D1A12]/90 hover:border-emerald-400 transition-all duration-500 shadow-2xl flex flex-col justify-between">
                     <div>
-                        <div class="grid grid-cols-2 gap-2 p-3 bg-black border-b border-emerald-950">
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/Bubble Shooter.png" alt="Bubble Shooter 01" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/Bubble_Shooter_01.png'">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">Classic</span>
+                        <div class="grid grid-cols-2 gap-2 p-3 bg-[#050B08] border-b border-emerald-950 h-[550px] sm:h-[620px]">
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/Bubble Shooter.png" alt="Bubble Shooter 01" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/Bubble_Shooter_01.png'">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">Classic</span>
                             </div>
-                            <div class="aspect-[4/3] relative rounded-xl overflow-hidden border border-emerald-500/20">
-                                <img src="assets/Bubble Shooter.png" alt="Bubble Shooter 02" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/Bubble_Shooter_02.png'">
-                                <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] text-emerald-400 px-1.5 py-0.5 rounded font-mono">Challenge</span>
+                            <div class="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/20 bg-[#0D1A12] flex items-center justify-center">
+                                <img src="assets/Bubble Shooter.png" alt="Bubble Shooter 02" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" onerror="this.src='assets/Bubble_Shooter_02.png'">
+                                <span class="absolute bottom-3 left-3 bg-black/80 text-[11px] text-emerald-400 px-3 py-1 rounded-full font-mono border border-emerald-500/40 backdrop-blur-md z-10">Challenge</span>
                             </div>
                         </div>
                         <div class="p-6">
@@ -382,7 +381,6 @@
 
     <!-- Scripts: Audio & Bilingual Language Toggle -->
     <script>
-        // Điều khiển nhạc nền
         const audio = document.getElementById('ambientAudio');
         const audioIcon = document.getElementById('audioIcon');
         let isPlaying = false;
@@ -399,7 +397,6 @@
             }
         }
 
-        // Chuyển đổi ngôn ngữ Song ngữ (EN / VI)
         let currentLang = 'vi';
 
         function toggleLanguage() {
